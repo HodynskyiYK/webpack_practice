@@ -1,9 +1,21 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "fonts.css";
+
 body {
-    background: #000;
+	color: #000;
+	font: 400 1rem/1.4em 'Roboto', sans-serif;
 }
 
 h1 {
-    color: #fff;
-    font-size: 3rem;
-    text-align: center;
+	position: relative;
+}
+
+h1:before {
+	content: '';
+	position: relative;
+	display: block;
+	margin: 10px 0;
+	width: 100px;
+	height: 100px;
+	background: transparent url(../img/logo.svg) no-repeat center/cover;
 }

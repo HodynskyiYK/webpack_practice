@@ -1,5 +1,9 @@
 import './styles/style.css';
+import img from './img/logo.svg';
 
-import greateUser from "./js/main";
+import $ from 'jquery';
+import {Post} from './components/Post.js';
 
-greateUser('Godzik');
+const post = new Post('WEBPACK POST TITLE', img);
+
+$('pre').addClass('card').html(post.toString());
